@@ -11,13 +11,13 @@
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}"> 
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap-theme.css')}}" media="screen"> 
-  <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
-  <link rel='stylesheet' id="camera-css"  href="{{asset('frontend/css/camera.css')}}" type="text/css" media="all"> 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
+    <link rel='stylesheet' id="camera-css"  href="{{asset('frontend/css/camera.css')}}" type="text/css" media="all"> 
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -26,7 +26,7 @@
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-			    <a class="navbar-brand" href="index.html">
+			    <a class="navbar-brand" href="{{url('home')}}">
                     <img src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
                 </a>
         </div>
@@ -34,10 +34,11 @@
             <ul class="nav navbar-nav pull-left mainNav">
                 <li><a href="{{url('home')}}">Beranda</a></li>
                 <li class="active"><a href="{{url('#')}}">Tentang</a></li>
-                <li><a href="#">Daftar PPDB</a></li>
+                <li><a href="{{url('ppdb')}}">Daftar PPDB</a></li>
             </ul>
             <ul class="nav navbar-nav pull-right mainNav">
-                <li><a href="#">Login</a></li>
+                <li><a href="{{url('login')}}">Login</a></li>
+                <li><a href="{{url('register')}}">Register</a></li>
             </ul>
             </div>
             <!--/.nav-collapse -->
@@ -52,7 +53,7 @@
                 <div class="icon-box-top grey-box-icon-pos">
                     <img src="{{asset('frontend/image/1visi.png')}}" alt="" />
                 </div><!--icon box top -->
-                <h3>Menjadi Pelajar yang Berpendidikan, Berjiwa Santuy, dan Berhobi Rebahan.</h3>
+                <h3>Menjadi Pelajar yang Berpendidikan, Berakhlak Sopan, dan Berjiwa Santuy.</h3>
             </div>
         </div><!--/span3-->
         <div class="col">
@@ -74,14 +75,14 @@
                     Blaemt Senior High School didirikan pada tanggal 20 November 1850. Sekolah ini didirikan dengan naungan Yayasan Santoryuu no Amaterasu.
                     Pada Tahun 1865, banyaknya kelas bertambah menjadi 10 kelas. Dalam rangka meningkatkan kemampuan akademik dibangun laboratorium fisika, kimia, biologi, dan bahasa. Pada Tahun 1900 Blaemt Senior High School memperoleh sertifikat akrditasi pada Agustus 1900.
                 </h4>
-                <h5>Pimpinan : </h5>
+                <h5>Riwayat Pimpinan : </h5>
                 <h5>- Senju Hashirama (1950 - 1955)</h5>
                 <h5>- Senju Tobirama (1955 - 1980)</h5>
                 <h5>- Sarutobi Hiruzen (1980 - 2000)</h5>
                 <h5>- Namikaze Minato (1990 - 1992)</h5>
                 <h5>- Senju Tsunade (2000 - 2005)</h5>
                 <h5>- Hatake Kakashi (2005 - 2011)</h5>
-                <h5>- Uzumaki Naruto (2011 - Sekarang)</h5>
+                <h5>- Uzumaki Naruto (2011 - SEKARANG)</h5>
             </div>
         </div><!--/span3-->
     </div>
@@ -118,10 +119,10 @@
         <h4>Contact</h4> 
                 <p></p>
             <div class="contact-info"> 
-                <i class="fa fa-map-marker"></i> &nbsp; Jl. Mantareno No. 13<br>
+                <i class="fa fa-map-marker"></i> &nbsp; Jl. Mantareno No. 13, District Shigansina<br>
                 <i class="fa fa-phone"></i> &nbsp; +62 666 619 123 <br>
-                <i class="fa fa-envelope-o"></i> &nbsp; contact@blaemt.com
-          </div> 
+                <i class="fa fa-envelope-o"></i> &nbsp; contact@blaemt.sch.id
+            </div> 
           </div><!-- end widget --> 
         </div>
       </div>
@@ -138,49 +139,15 @@
 		<div class="footer2">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 panel">
-						<div class="panel-body">
-							<p class="text-right">
-								Copyright &copy; 2014.
-							</p>
-						</div>
-					</div>
-
+                    <div class="panel-body">
+                        <p class="text-center">
+                            Copyright &copy; 2014.
+                        </p>
+                    </div>
 				</div>
 				<!-- /row of panels -->
 			</div>
 		</div>
 	</footer>
-
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="{{asset('frontend/js/modernizr-latest.js')}}"></script> 
-	<script type="text/javascript" src="{{asset('frontend/js/jquery.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/fancybox/jquery.fancybox.pack.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/jquery.mobile.customized.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/jquery.easing.1.3.js')}}"></script> 
-  <script type="text/javascript" src="{{asset('frontend/js/camera.min.js')}}"></script>
-  <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
-	<script src="{{asset('frontend/js/custom.js')}}"></script>
-    <script>
-		jQuery(function(){
-			
-			jQuery('#camera_wrap_4').camera({
-                transPeriod: 500,
-                time: 3000,
-				height: '600',
-				loader: 'false',
-				pagination: true,
-				thumbnails: false,
-				hover: false,
-                playPause: false,
-                navigation: false,
-				opacityOnGrid: false,
-				imagePath: 'assets/images/'
-			});
-
-		});
-      
-	</script>
-    
 </body>
 </html>

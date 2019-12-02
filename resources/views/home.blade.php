@@ -34,10 +34,11 @@
 				<ul class="nav navbar-nav pull-left mainNav">
 					<li class="active"><a href="#">Beranda</a></li>
 					<li><a href="{{url('about')}}">Tentang</a></li>
-          <li><a href="#">Daftar PPDB</a></li>
+          <li><a href="{{url('ppdb')}}">Daftar PPDB</a></li>
         </ul>
         <ul class="nav navbar-nav pull-right mainNav">
-          <li><a href="#">Login</a></li>
+          <li><a href="{{url('login')}}">Login</a></li>
+          <li><a href="{{url('register')}}">Register</a></li>
         </ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -122,9 +123,9 @@
         <h4>Contact</h4> 
             <p></p>
           <div class="contact-info"> 
-            <i class="fa fa-map-marker"></i> &nbsp; Jl. Mantareno No. 13<br>
+            <i class="fa fa-map-marker"></i> &nbsp; Jl. Mantareno No. 13, District Shigansina<br>
             <i class="fa fa-phone"></i> &nbsp; +62 666 619 123 <br>
-            <i class="fa fa-envelope-o"></i> &nbsp; contact@blaemt.com
+            <i class="fa fa-envelope-o"></i> &nbsp; contact@blaemt.sch.id
           </div> 
           </div><!-- end widget --> 
         </div>
@@ -135,56 +136,21 @@
 				<a href="#"><i class="fa fa-instagram"></i></a>
 				<a href="#"><i class="fa fa-github"></i></a>
 			</div>
-
 			<div class="clear"></div>
 			<!--CLEAR FLOATS-->
 		</div>
 		<div class="footer2">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 panel">
-						<div class="panel-body">
-							<p class="text-right">
-								Copyright &copy; 2014.
-							</p>
-						</div>
-					</div>
-
+          <div class="panel-body">
+            <p class="text-center">
+              Copyright &copy; 2014.
+            </p>
+          </div>
 				</div>
 				<!-- /row of panels -->
 			</div>
 		</div>
 	</footer>
-
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="{{asset('frontend/js/modernizr-latest.js')}}"></script> 
-	<script type="text/javascript" src="{{asset('frontend/js/jquery.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/fancybox/jquery.fancybox.pack.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/jquery.mobile.customized.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/jquery.easing.1.3.js')}}"></script> 
-  <script type="text/javascript" src="{{asset('frontend/js/camera.min.js')}}"></script>
-  <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
-	<script src="{{asset('frontend/js/custom.js')}}"></script>
-    <script>
-		jQuery(function(){
-			
-			jQuery('#camera_wrap_4').camera({
-                transPeriod: 500,
-                time: 3000,
-				height: '600',
-				loader: 'false',
-				pagination: true,
-				thumbnails: false,
-				hover: false,
-                playPause: false,
-                navigation: false,
-				opacityOnGrid: false,
-				imagePath: 'assets/images/'
-			});
-
-		});
-      
-	</script>
-    
 </body>
 </html>
