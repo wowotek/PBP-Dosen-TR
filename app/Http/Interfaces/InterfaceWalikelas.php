@@ -40,6 +40,10 @@ class InterfaceWalikelas extends Controller {
         }
     }
 
+    public static function GetNilaiAkhir($id_siswa){
+
+    }
+
     public static function AturRapor($id_siswa, $alpha = 0, $sakit = 0, $izin = 0, $tersedia = False, $catatan = ""){
         $rapor = self::GetRaport($id_siswa);
 
