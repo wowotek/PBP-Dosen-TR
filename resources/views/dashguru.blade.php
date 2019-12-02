@@ -84,8 +84,7 @@
 	<link rel="favicon" href="{{asset('frontend/image/favicon.png')}}">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" media="screen">
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}"> 
-	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap-theme.css')}}" media="screen"> 
+	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/mine.css')}}">
     <link rel="script" href="{{asset('frontend/js/mine.js')}}">
@@ -99,33 +98,60 @@
 <body>
     <div class="sidenav">
         <div class="sidnav-logo">
-            <a class="navbar-brand" href="{{url('home')}}">
-                <img src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
-            </a>
+        <a class="navbar-brand" href="{{url('home')}}">
+            <img src="{{asset('frontend/image/logo-dash.png')}}" alt="Logo">
+        </a>
         <a href="#">&nbsp;</a>
         <a href="#">&nbsp;</a>
         <button class="dropdown-btn">
-            Manajemen Penerimaan Siswa <i class="fa fa-caret-down"></i>
+            Manajemen Nilai Siswa <i class="fa fa-caret-down"></i>
         </button>
             <div class="dropdown-container">
-                <a href="#">• Calon Siswa</a>
-                <a href="#">• Siswa Diterima</a>
+            <button class="dropdown-btn">
+                Kelas 10<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas A</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas B</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas C</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas D</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas E</a>
             </div>
-            <a href="#">Manajemen Siswa Kelas</a>
-        <button class="dropdown-btn">
-            Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
-        </button>
+            <button class="dropdown-btn">
+                Kelas 11<i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-container">
-                <a href="#">• Bahasa Indonesia</a>
-                <a href="#">• Pendidikan Agama</a>
-                <a href="#">• Pendidikan Kewarganegaraan</a>
-                <a href="#">• Sejarah</a>
-                <a href="#">• Matematika</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas A</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas B</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas C</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas D</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas E</a>
+            </div>
+            <button class="dropdown-btn">
+                Kelas 12<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas A</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas B</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas C</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas D</a>
+                <a href="{{url('dashboard/guru/kelas')}}">• Kelas E</a>
+            </div>
             </div>
         </div>
     </div>
 
     <div class="main">
+        <nav class="navbar navbar-light bg-light">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-left mainNav">
+                    <a class="navbar-brand" href="{{url('dashboard/tatausaha')}}">DASHBOARD GURU - PELAJARAN</a>
+                </ul>
+                <ul class="nav navbar-nav pull-right mainNav">
+                <i class="fa fa-user">&nbsp;</i>Account
+                </ul>
+            </div>
+        </nav>
     <div class="container">
         <div class="row">
             <div class="container">
@@ -133,36 +159,32 @@
                     <div class="col">
                         <div class="white-box-icon">
                             <div class="text-center">
-                                    <h2>Dashboard Tata Usaha</h2>
                                     <div class="align-self-center">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                            <tr>
-                                                <th scope="col">No</th>
-                                                <th scope="col">Nama</th>
-                                                <th scope="col">Asal TK</th>
-                                                <th scope="col">Asal SD</th>
-                                                <th scope="col">Asal SMP</th>
-                                                <th scope="col">NEM TK</th>
-                                                <th scope="col">NEM SD</th>
-                                                <th scope="col">NEM SMP</th>
-                                                <th scope="col">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                        </tr>
-                                    </table>
+                                        <div class="col">
+                                            <h2>KELAS 10</h2>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-primary btn-lg">A</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-info btn-lg">B</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-success btn-lg">C</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-danger btn-lg">D</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning btn-lg">E</a>
+                                        </div>
+                                        <div class="col">
+                                            <h2>KELAS 11</h2>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-primary btn-lg">A</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-info btn-lg">B</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-success btn-lg">C</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-danger btn-lg">D</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning btn-lg">E</a>
+                                        </div>
+                                        <div class="col">
+                                            <h2>KELAS 12</h2>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-primary btn-lg">A</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-info btn-lg">B</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-success btn-lg">C</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-danger btn-lg">D</a>
+                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning btn-lg">E</a>
+                                        </div>
                                     </div>
-                                    <p>This sidenav is always shown.</p>
                                 </div>
                             </div>
                         </div>

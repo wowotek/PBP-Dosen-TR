@@ -38,6 +38,7 @@ Route::get('/login', function () {
     return view('login');
 });
 
+// Dashboard TU
 Route::get('/dashboard/tatausaha', function () {
     return view('dashtu');
 });
@@ -72,4 +73,17 @@ Route::get('/dashboard/tatausaha/guru/sejarah', function () {
 
 Route::get('/dashboard/tatausaha/guru/matematika', function () {
     return view('mapelmtk');
+});
+
+// Dashboard Guru
+Route::get('/dashboard/guru', function () {
+    return view('dashguru');
+});
+
+Route::get('/dashboard/guru/kelas', function () {
+    return view('dashgurumapel');
+});
+
+Route::get('/dashboard/guru/wali', function () {
+    return view('dashguruwali');
 });
