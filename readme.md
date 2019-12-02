@@ -11,7 +11,6 @@
 > **PERINGATAN** : *Tugas ini dirilis **tanpa garansi**, termasuk nilai yang di-nihilkan oleh sebab **mencontek** dan/atau **menyalin** dan/atau **meniru** yang bersumber dari tugas ini*
 
 # PBP Dosen Tugas Rancang - Sistem Informasi Raport Siswa
-![thumbnail](./screenshot.png)
 
 ## Pengawas / Dosen
 
@@ -44,7 +43,7 @@
     composer install
     ```
 
-3. Kopi file `.env.example` dan beri nama dengan `.env`
+3. Duplikat / _copy_ file `.env.example` dan beri nama dengan `.env`
 
     ```bash
     cp ./.env.example ./.env
