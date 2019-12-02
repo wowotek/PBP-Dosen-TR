@@ -109,7 +109,8 @@
                 <a href="{{url('dashboard/tatausaha/calon-siswa')}}">• Calon Siswa</a>
                 <a href="{{url('dashboard/tatausaha/siswa-acc')}}">• Siswa Diterima</a>
             </div>
-            <a href="#">Manajemen Siswa Kelas</a>
+        <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
+        <a href="#">Manajemen Wali Kelas</a>
         <button class="dropdown-btn">
             Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
         </button>
@@ -142,13 +143,13 @@
                         <div class="white-box-icon">
                             <div class="align-self-center">
                                 <div class="text-center">
-                                    <h2>MANAJEMEN SISWA KELAS</h2>
+                                    <h2>MANAJEMEN GURU - WALI KELAS</h2>
                                     <table class="table table-bordered">
                                         <thead>
                                         <tr>
                                             <td>No</td>
                                             <td>Nama Lengkap</td>
-                                            <td>NIS</td>
+                                            <td>No Induk Guru</td>
                                             <td>Kelas</td>
                                         </tr>
                                     </thead>
