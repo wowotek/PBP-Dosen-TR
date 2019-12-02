@@ -20,12 +20,7 @@ class InterfaceTataUsaha extends Controller {
         $siswa = new Siswa; // Buat Raport Siswa
         $siswa->pengguna_id = $user->id;
 
-        try {
-            $cs->delete();
-        } catch (\Exception $e) {
-            echo "Delete Calon Siswa GAGAL !";
-            echo "Target : ". $cs->id . " | " . $cs->no_pendaftaran;
-        }
+        $cs->delete();
 
         $siswa->save();
         $siswa->refresh();
@@ -99,9 +94,19 @@ class InterfaceTataUsaha extends Controller {
         return $pelajaran;
     }
 
-    public static function ManagemenGuruKelas($id_guru, $id_kelas){
-        $pelajaran = Pelajaran::where("guru_id", $id_guru)->first();
-        $pelajaran->kelas_id = $id_kelas;
+    public static function ManagemenWalikelasKelas($id_kelas, $id_guru){
+        $kelas = Kelas::where("id", $id_kelas);
+        $kelas->walikelas_id = $id_guru;
+
+        $kelas->save();
+        $kelas->refresh();
+
+        return kelas;
+    }
+
+    public static function ManagemenGuruKelas($id_kelas, $id_guru){
+        $pelajaran = Pelajaran::where("kelas_id", $id_kelas)->first();
+        $pelajaran->guru_id = $id_guru;
 
         $pelajaran->save();
         $pelajaran->refresh();
