@@ -109,7 +109,8 @@
                 <a href="#">• Calon Siswa</a>
                 <a href="{{url('dashboard/tatausaha/siswa-acc')}}">• Siswa Diterima</a>
             </div>
-            <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
+        <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
+        <a href="{{url('dashboard/tatausaha/wali-kelas')}}">Manajemen Wali Kelas</a>
         <button class="dropdown-btn">
             Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
         </button>
