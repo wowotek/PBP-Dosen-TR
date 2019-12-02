@@ -81,5 +81,9 @@ Route::get('/dashboard/guru', function () {
 });
 
 Route::get('/dashboard/guru/kelas', function () {
-    return view('dashgurukelas');
+    return view('dashgurumapel');
+});
+
+Route::get('/dashboard/guru/wali', function () {
+    return view('dashguruwali');
 });

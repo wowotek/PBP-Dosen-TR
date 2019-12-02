@@ -159,32 +159,33 @@
                     <div class="col">
                         <div class="white-box-icon">
                             <div class="text-center">
-                                    <div class="align-self-center">
+                                <div class="align-self-center">
                                     <table class="table table-bordered">
                                     <h2>MANAJEMEN NILAI</h2>
                                     <h3>KELAS</h3>
-                                            <thead>
-                                            <tr>
-                                                <td>No.</td>
-                                                <td>Nama</td>
-                                                <td>No. Induk Siswa</td>
-                                                <td>Tugas</td>
-                                                <td>UTS</td>
-                                                <td>UAS</td>
-                                                <td>NILAI AKHIR</td>
-                                            </tr>
-                                        </thead>
+                                        <thead>
                                         <tr>
-                                            <td>1</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
+                                            <td>No.</td>
+                                            <td>Nama</td>
+                                            <td>No. Induk Siswa</td>
+                                            <td>Tugas</td>
+                                            <td>UTS</td>
+                                            <td>UAS</td>
+                                            <td>NILAI AKHIR</td>
+                                            <td>Action</td>
                                         </tr>
-                                        </table>
-                                    </div>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td><a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning">Input</a></td>
+                                    </tr>
+                                    </table>
                                 </div>
                             </div>
                         </div>
