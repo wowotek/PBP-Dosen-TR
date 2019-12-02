@@ -16,7 +16,7 @@
 
 * **Yeremia Alfa Susetyo**
 
-## Penulis / Author
+## Penulis / Author / Developers
 
 * **Aurelia Gabriele** (672017277) - *@aureliagbrl*
 * **Bimo Bagus** (672017288) - *bimobagus*
@@ -27,6 +27,10 @@
 Semua Kebutuhan, Detail Requirements, ERD dll. tersedia di :
 
 ### [PBP-Dosen-TR-Docs](https://github.com/wowotek/PBP-Dosen-TR-Docs)
+
+Semua Progress yang dilakukan developer dapat ditinjau di :
+
+### [Trello Board](https://trello.com/c/7Z86syAg)
 
 ## Penggunaan / Usage
 
