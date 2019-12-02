@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+
+Route::get('/', 'Controller@show');
 
 Route::get('/home', function () {
     return view('home');
