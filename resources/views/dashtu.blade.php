@@ -98,9 +98,9 @@
 <body>
     <div class="sidenav">
         <div class="sidnav-logo">
-            <a class="navbar-brand" href="{{url('home')}}">
-                <img src="{{asset('frontend/image/logo-dash.png')}}" alt="Logo">
-            </a>
+        <a class="navbar-brand" href="{{url('home')}}">
+            <img src="{{asset('frontend/image/logo-dash.png')}}" alt="Logo">
+        </a>
         <a href="#">&nbsp;</a>
         <a href="#">&nbsp;</a>
         <button class="dropdown-btn">
