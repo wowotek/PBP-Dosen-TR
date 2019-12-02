@@ -56,7 +56,7 @@
         /* Add an active class to the active dropdown button */
         .active {
             background-color: #fbb017;
-            color: #16244b;
+            color: white;
         }
 
         /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -85,7 +85,6 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" media="screen">
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/mine.css')}}">
     <link rel="script" href="{{asset('frontend/js/mine.js')}}">
     <link rel='stylesheet' id="camera-css"  href="{{asset('frontend/css/camera.css')}}" type="text/css" media="all">
@@ -131,7 +130,7 @@
                     <a class="navbar-brand" href="{{url('dashboard/tatausaha')}}">DASHBOARD TATA USAHA</a>
                 </ul>
                 <ul class="nav navbar-nav pull-right mainNav">
-                <i class="fa fa-user">&nbsp;</i>Account
+                <i class="fa fa-user">&nbsp;Account</i>
                 </ul>
             </div>
         </nav>
@@ -141,25 +140,31 @@
                 <div class="row">
                     <div class="col">
                         <div class="white-box-icon">
-                            <div class="text-center">
-                                    <div class="align-self-center">
-                                        <div class="col">
-                                            <h2>PENERIMAAN PESERTA DIDIK BARU</h2>
-                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/calon-siswa')}}" role="button">Calon Siswa</a>
-                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/siswa-acc')}}" role="button">Siswa Diterima</a>
-                                        </div>
-                                        <div class="col">
-                                            <h2>KELOLA PENEMPATAN KELAS SISWA</h2>
-                                            <a class="btn btn-primary" href="#" role="button">Manajemen Siswa Kelas</a>
-                                        </div>
-                                        <div class="col">
-                                            <h2>GURU KELAS / GURU MATA PELAJARAN</h2>
-                                            <a class="btn btn-primary" href="#" role="button">Bahasa Indonesia</a>
-                                            <a class="btn btn-primary" href="#" role="button">Pendidikan Agama</a>
-                                            <a class="btn btn-primary" href="#" role="button">Pendidikan Kewarganegaraan</a>
-                                            <a class="btn btn-primary" href="#" role="button">Sejarah</a>
-                                            <a class="btn btn-primary" href="#" role="button">Matematika</a>
-                                        </div>
+                            <div class="align-self-center">
+                                <div class="text-center">
+                                    <h2>MANAJEMEN GURU - PENDIDIKAN KEWARGANEGARAAN</h2>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <td>No</td>
+                                                <td>Nama Lengkap</td>
+                                                <td>No Induk Guru</td>
+                                                <td>Kelas</td>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary bt-sm">A</button>
+                                                <button type="button" class="btn btn-info bt-sm">B</button>
+                                                <button type="button" class="btn btn-success bt-sm">C</button>
+                                                <button type="button" class="btn btn-danger bt-sm">D</button>
+                                                <button type="button" class="btn btn-warning bt-sm">E</button>
+                                            </td>
+                                        </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div>

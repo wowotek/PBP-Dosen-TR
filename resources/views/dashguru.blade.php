@@ -84,7 +84,8 @@
 	<link rel="favicon" href="{{asset('frontend/image/favicon.png')}}">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" media="screen">
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}"> 
+	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap-theme.css')}}" media="screen"> 
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/mine.css')}}">
     <link rel="script" href="{{asset('frontend/js/mine.js')}}">
@@ -99,7 +100,7 @@
     <div class="sidenav">
         <div class="sidnav-logo">
             <a class="navbar-brand" href="{{url('home')}}">
-                <img src="{{asset('frontend/image/logo-dash.png')}}" alt="Logo">
+                <img src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
             </a>
         <a href="#">&nbsp;</a>
         <a href="#">&nbsp;</a>
@@ -107,34 +108,24 @@
             Manajemen Penerimaan Siswa <i class="fa fa-caret-down"></i>
         </button>
             <div class="dropdown-container">
-                <a href="{{url('dashboard/tatausaha/calon-siswa')}}">• Calon Siswa</a>
-                <a href="{{url('dashboard/tatausaha/siswa-acc')}}">• Siswa Diterima</a>
+                <a href="#">• Calon Siswa</a>
+                <a href="#">• Siswa Diterima</a>
             </div>
-            <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
+            <a href="#">Manajemen Siswa Kelas</a>
         <button class="dropdown-btn">
             Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
         </button>
             <div class="dropdown-container">
-                <a href="{{url('dashboard/tatausaha/guru/bahasa')}}">• Bahasa Indonesia</a>
-                <a href="{{url('dashboard/tatausaha/guru/agama')}}">• Pendidikan Agama</a>
-                <a href="{{url('dashboard/tatausaha/guru/pkn')}}">• Pendidikan Kewarganegaraan</a>
-                <a href="{{url('dashboard/tatausaha/guru/sejarah')}}">• Sejarah</a>
-                <a href="{{url('dashboard/tatausaha/guru/matematika')}}">• Matematika</a>
+                <a href="#">• Bahasa Indonesia</a>
+                <a href="#">• Pendidikan Agama</a>
+                <a href="#">• Pendidikan Kewarganegaraan</a>
+                <a href="#">• Sejarah</a>
+                <a href="#">• Matematika</a>
             </div>
         </div>
     </div>
 
     <div class="main">
-        <nav class="navbar navbar-light bg-light">
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav pull-left mainNav">
-                    <a class="navbar-brand" href="{{url('dashboard/tatausaha')}}">DASHBOARD TATA USAHA</a>
-                </ul>
-                <ul class="nav navbar-nav pull-right mainNav">
-                <i class="fa fa-user">&nbsp;</i>Account
-                </ul>
-            </div>
-        </nav>
     <div class="container">
         <div class="row">
             <div class="container">
@@ -142,25 +133,36 @@
                     <div class="col">
                         <div class="white-box-icon">
                             <div class="text-center">
+                                    <h2>Dashboard Tata Usaha</h2>
                                     <div class="align-self-center">
-                                        <div class="col">
-                                            <h2>PENERIMAAN PESERTA DIDIK BARU</h2>
-                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/calon-siswa')}}" role="button">Calon Siswa</a>
-                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/siswa-acc')}}" role="button">Siswa Diterima</a>
-                                        </div>
-                                        <div class="col">
-                                            <h2>KELOLA PENEMPATAN KELAS SISWA</h2>
-                                            <a class="btn btn-primary" href="#" role="button">Manajemen Siswa Kelas</a>
-                                        </div>
-                                        <div class="col">
-                                            <h2>GURU KELAS / GURU MATA PELAJARAN</h2>
-                                            <a class="btn btn-primary" href="#" role="button">Bahasa Indonesia</a>
-                                            <a class="btn btn-primary" href="#" role="button">Pendidikan Agama</a>
-                                            <a class="btn btn-primary" href="#" role="button">Pendidikan Kewarganegaraan</a>
-                                            <a class="btn btn-primary" href="#" role="button">Sejarah</a>
-                                            <a class="btn btn-primary" href="#" role="button">Matematika</a>
-                                        </div>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">No</th>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col">Asal TK</th>
+                                                <th scope="col">Asal SD</th>
+                                                <th scope="col">Asal SMP</th>
+                                                <th scope="col">NEM TK</th>
+                                                <th scope="col">NEM SD</th>
+                                                <th scope="col">NEM SMP</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                        </tr>
+                                    </table>
                                     </div>
+                                    <p>This sidenav is always shown.</p>
                                 </div>
                             </div>
                         </div>

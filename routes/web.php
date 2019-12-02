@@ -38,3 +38,35 @@ Route::get('/login', function () {
 Route::get('/dashboard/tatausaha', function () {
     return view('dashtu');
 });
+
+Route::get('/dashboard/tatausaha/calon-siswa', function () {
+    return view('tucalonsiswa');
+});
+
+Route::get('/dashboard/tatausaha/siswa-acc', function () {
+    return view('tusiswaacc');
+});
+
+Route::get('/dashboard/tatausaha/kelas-siswa', function () {
+    return view('tukelas');
+});
+
+Route::get('/dashboard/tatausaha/guru/bahasa', function () {
+    return view('mapelindo');
+});
+
+Route::get('/dashboard/tatausaha/guru/agama', function () {
+    return view('mapelagama');
+});
+
+Route::get('/dashboard/tatausaha/guru/pkn', function () {
+    return view('mapelpkn');
+});
+
+Route::get('/dashboard/tatausaha/guru/sejarah', function () {
+    return view('mapelsjr');
+});
+
+Route::get('/dashboard/tatausaha/guru/matematika', function () {
+    return view('mapelmtk');
+});
