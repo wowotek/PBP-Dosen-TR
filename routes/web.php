@@ -79,3 +79,7 @@ Route::get('/dashboard/tatausaha/guru/matematika', function () {
 Route::get('/dashboard/guru', function () {
     return view('dashguru');
 });
+
+Route::get('/dashboard/guru/kelas', function () {
+    return view('dashgurukelas');
+});

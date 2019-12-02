@@ -145,7 +145,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-left mainNav">
-                    <a class="navbar-brand" href="{{url('dashboard/tatausaha')}}">DASHBOARD GURU - PELAJARAN</a>
+                    <a class="navbar-brand" href="{{url('dashboard/guru')}}">DASHBOARD GURU - PELAJARAN</a>
                 </ul>
                 <ul class="nav navbar-nav pull-right mainNav">
                 <i class="fa fa-user">&nbsp;</i>Account
@@ -160,30 +160,30 @@
                         <div class="white-box-icon">
                             <div class="text-center">
                                     <div class="align-self-center">
-                                        <div class="col">
-                                            <h2>KELAS 10</h2>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-primary btn-lg">A</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-info btn-lg">B</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-success btn-lg">C</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-danger btn-lg">D</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning btn-lg">E</a>
-                                        </div>
-                                        <div class="col">
-                                            <h2>KELAS 11</h2>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-primary btn-lg">A</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-info btn-lg">B</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-success btn-lg">C</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-danger btn-lg">D</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning btn-lg">E</a>
-                                        </div>
-                                        <div class="col">
-                                            <h2>KELAS 12</h2>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-primary btn-lg">A</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-info btn-lg">B</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-success btn-lg">C</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-danger btn-lg">D</a>
-                                            <a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning btn-lg">E</a>
-                                        </div>
+                                    <table class="table table-bordered">
+                                    <h2>MANAJEMEN NILAI</h2>
+                                    <h3>KELAS</h3>
+                                            <thead>
+                                            <tr>
+                                                <td>No.</td>
+                                                <td>Nama</td>
+                                                <td>No. Induk Siswa</td>
+                                                <td>Tugas</td>
+                                                <td>UTS</td>
+                                                <td>UAS</td>
+                                                <td>NILAI AKHIR</td>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                            <td>TBD</td>
+                                        </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
