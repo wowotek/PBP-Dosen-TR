@@ -29,8 +29,8 @@
         .sidenav a, .dropdown-btn {
             padding: 8px 8px 6px 16px;
             text-decoration: none;
-            font-size: 14px;
-            color: #000000;
+            font-size: 18px;
+            color: #111f47;
             display: block;
             border: none;
             background: none;
@@ -102,42 +102,7 @@
             <img src="{{asset('frontend/image/logo-dash.png')}}" alt="Logo">
         </a>
         <a href="#">&nbsp;</a>
-        <a href="#">&nbsp;</a>
-        <button class="dropdown-btn">
-            Manajemen Nilai Siswa <i class="fa fa-caret-down"></i>
-        </button>
-            <div class="dropdown-container">
-            <button class="dropdown-btn">
-                Kelas 10<i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas A</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas B</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas C</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas D</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas E</a>
-            </div>
-            <button class="dropdown-btn">
-                Kelas 11<i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas A</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas B</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas C</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas D</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas E</a>
-            </div>
-            <button class="dropdown-btn">
-                Kelas 12<i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas A</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas B</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas C</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas D</a>
-                <a href="{{url('dashboard/guru/kelas')}}">• Kelas E</a>
-            </div>
-            </div>
+        <a href="#">RAPORT SAYA</a>
         </div>
     </div>
 
@@ -145,7 +110,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-left mainNav">
-                    <a class="navbar-brand" href="{{url('dashboard/guru')}}">DASHBOARD GURU - PELAJARAN</a>
+                    <a class="navbar-brand" href="{{url('dashboard/tatausaha')}}">RAPORT SISWA</a>
                 </ul>
                 <ul class="nav navbar-nav pull-right mainNav">
                 <i class="fa fa-user">&nbsp;</i>Account
@@ -159,35 +124,99 @@
                     <div class="col">
                         <div class="white-box-icon">
                             <div class="text-center">
-                                <div class="align-self-center">
-                                    <table class="table table-bordered">
-                                    <h2>MANAJEMEN NILAI</h2>
-                                    <h3>KELAS</h3>
-                                        <thead>
+                                <img src="{{asset('frontend/image/logo-dash.png')}}" class="rounded mx-auto d-block" alt="Logo BSN">
+                            </div>
+                            <p class="text-left">Nama :</p>
+                            <p class="text-left">Kelas</p>
+                            <p class="text-left">Semester :</p>
+                            <p class="text-left">Tahun Ajaran :</p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="row">No.</th>
+                                        <th scope="row">Mata Pelajaran</th>
+                                        <th scope="row">KKM</th>
+                                        <th scope="row">Nilai Akhir</th>
+                                        <th scope="row">Indeks</th>
+                                        <th scope="row">Catatan</th>
+                                    </tr>
+                                </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Bahasa Indonesia</td>
+                                        <td>80</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Pendidikan Agama</td>
+                                        <td>80</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Pendidikan Kewarganegaraan</td>
+                                        <td>76</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Sejarah</td>
+                                        <td>76</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Matematika</td>
+                                        <td>76</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td coolspan="2">Nilai Rata-rata</td>
+                                        <td>TBD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
                                         <tr>
-                                            <td>No.</td>
-                                            <td>Nama</td>
-                                            <td>No. Induk Siswa</td>
-                                            <td>Tugas</td>
-                                            <td>UTS</td>
-                                            <td>UAS</td>
-                                            <td>Nilai Akhir</td>
-                                            <td>Catatan</td>
-                                            <td>Action</td>
+                                            <th scope="row">Keterangan Tidak Masuk</th>
+                                            <th scope="row">Jumlah</th>
                                         </tr>
                                     </thead>
                                     <tr>
-                                        <td>1</td>
+                                        <td>Sakit</td>
                                         <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td><a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning">Input</a></td>
                                     </tr>
-                                    </table>
+                                    <tr>
+                                        <td>Izin</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tanpa Keterangan</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>TBD</td>
+                                    </tr>
+                                </table>
+                                <div class="form-group">
+                                    <label>Catatan Wali Kelas : </label>
+                                    <textarea class="form-control" id="catatanwali" rows="3" readonly></textarea>
                                 </div>
                             </div>
                         </div>

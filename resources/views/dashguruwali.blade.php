@@ -138,11 +138,13 @@
                                             <td>Sakit</td>
                                             <td>Alfa</td>
                                             <td>NILAI AKHIR</td>
+                                            <td>Catatan</td>
                                             <td>Action</td>
                                         </tr>
                                     </thead>
                                     <tr>
                                         <td>1</td>
+                                        <td>TBD</td>
                                         <td>TBD</td>
                                         <td>TBD</td>
                                         <td>TBD</td>

@@ -51,8 +51,12 @@ Route::get('/dashboard/tatausaha/siswa-acc', function () {
     return view('tusiswaacc');
 });
 
+Route::get('/dashboard/tatausaha/wali-kelas', function () {
+    return view('tuwalikelas');
+});
+
 Route::get('/dashboard/tatausaha/kelas-siswa', function () {
-    return view('tukelas');
+    return view('tusiswakelas');
 });
 
 Route::get('/dashboard/tatausaha/guru/bahasa', function () {
@@ -86,4 +90,10 @@ Route::get('/dashboard/guru/kelas', function () {
 
 Route::get('/dashboard/guru/wali', function () {
     return view('dashguruwali');
+});
+
+// Dashboard Siswa
+
+Route::get('/dashboard/siswa/raport', function () {
+    return view('dashsiswa');
 });
