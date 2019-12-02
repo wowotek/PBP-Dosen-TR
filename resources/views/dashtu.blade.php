@@ -133,7 +133,7 @@
                     <div class="col">
                         <div class="white-box-icon">
                             <div class="text-center">
-                                    <h2>Sidenav Example</h2>
+                                    <h2>Dashboard Tata Usaha</h2>
                                     <div class="align-self-center">
                                         <table class="table table-bordered">
                                             <thead>
