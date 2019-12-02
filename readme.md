@@ -12,17 +12,23 @@
 
 # PBP Dosen Tugas Rancang - Sistem Informasi Raport Siswa
 
-## Pengawas / Dosen
+## Pengawas / Lecturer
 
 * **Yeremia Alfa Susetyo**
 
-## Penulis
+## Penulis / Author
 
 * **Aurelia Gabriele** (672017277) - *@aureliagbrl*
 * **Bimo Bagus** (672017288) - *bimobagus*
 * **Erlangga Ibrahim** (672017282) - *@wowotek*
 
-## Development
+## Dasar Pengembangan / Platform Development
+
+Semua Kebutuhan, Detail Requirements, ERD dll. tersedia di :
+
+### [PBP-Dosen-TR-Docs](https://github.com/wowotek/PBP-Dosen-TR-Docs)
+
+## Penggunaan / Usage
 
 1. Clone Repo ini
     * via HTTPS:
