@@ -11,19 +11,28 @@
 > **PERINGATAN** : *Tugas ini dirilis **tanpa garansi**, termasuk nilai yang di-nihilkan oleh sebab **mencontek** dan/atau **menyalin** dan/atau **meniru** yang bersumber dari tugas ini*
 
 # PBP Dosen Tugas Rancang - Sistem Informasi Raport Siswa
-![thumbnail](./screenshot.png)
 
-## Pengawas / Dosen
+## Pengawas / Lecturer
 
 * **Yeremia Alfa Susetyo**
 
-## Penulis
+## Penulis / Author / Developers
 
 * **Aurelia Gabriele** (672017277) - *@aureliagbrl*
 * **Bimo Bagus** (672017288) - *bimobagus*
 * **Erlangga Ibrahim** (672017282) - *@wowotek*
 
-## Development
+## Dasar Pengembangan / Platform Development
+
+Semua Kebutuhan, Detail Requirements, ERD dll. tersedia di :
+
+### [PBP-Dosen-TR-Docs](https://github.com/wowotek/PBP-Dosen-TR-Docs)
+
+Semua Progress yang dilakukan developer dapat ditinjau di :
+
+### [Trello Board](https://trello.com/c/7Z86syAg)
+
+## Penggunaan / Usage
 
 1. Clone Repo ini
     * via HTTPS:
@@ -44,7 +53,7 @@
     composer install
     ```
 
-3. Kopi file `.env.example` dan beri nama dengan `.env`
+3. Duplikat / _copy_ file `.env.example` dan beri nama dengan `.env`
 
     ```bash
     cp ./.env.example ./.env
