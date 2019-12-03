@@ -51,21 +51,22 @@
                 <div class="row">
                     <div class="col">
                         <div class="grey-box-icon">
-                        <div class="text-center">
-                            <img width="50%" class="image-fluid" src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
-                            <h3>
-                                Lengkapi Data Diri
-                            </h3>
-                            <p>Masukkan lengkap anda!</p><br>
-                        </div>
-                        <form action="" method="">
-                            <div class="form-group row">
-                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">Nama Lengkap</label></h4>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control form-control-sm" id="username" placeholder="">
-                                </div>
+                            <div class="text-center">
+                                <img width="50%" class="image-fluid" src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
+                                <h3>
+                                    {{ $username }}, Lengkapi Data Diri
+                                </h3>
+                                <p>Masukkan lengkap anda!</p><br>
                             </div>
-                                <h2><a href="{{url('home')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</a></h2>
+                            <form action="/anggota/calon/biodata" method="post"> <!--FORM VERIFIKASI BIODATA CALON SISWA-->
+                                {{ csrf_field() }}
+                                <div class="form-group row">
+                                    <h4><label for="inputUsername" class="col-sm-5 col-form-label">Nama Lengkap</label></h4>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control form-control-sm" id="username" name="nama_lengkap" placeholder="">
+                                    </div>
+                                </div>
+                                <h2><button type="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</button></h2>
                             </form>
                         </div>
                     </div>

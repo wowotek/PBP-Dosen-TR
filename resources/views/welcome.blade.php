@@ -65,5 +65,6 @@
         </style>
     </head>
     <body>
+        <h1>{{ var_dump($msg["username"]) }}</h1>
     </body>
 </html>

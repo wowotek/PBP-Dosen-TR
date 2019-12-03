@@ -18,6 +18,16 @@
 
 Route::get('/', 'Controller@show');
 
+
+// Route Fungsional
+
+Route::post("/anggota/login", 'Controller@anggotaLogin');
+Route::post("/anggota/ppbdb", 'Controller@anggotaPPBDB');
+Route::post("/anggota/calon/biodata", 'Controller@anggotaBioCalonSiswa');
+
+
+// Route Statis
+
 Route::get('/home', function () { // STATIS
     return view('home');
 });
@@ -28,15 +38,6 @@ Route::get('/about', function () { // STATIS
 
 Route::get('/ppdb', function () { // TODO: Trello
     return view('form');
-});
-
-<<<<<<< HEAD
-Route::get('/register', function () { // TODO: Trello
-    return view('register');
-=======
-Route::get('/ppdb/confirm', function () {
-    return view('biosiswa');
->>>>>>> 267c3a0420e1f4c5bbf33f9ff3fe3e4d0a75b356
 });
 
 Route::get('/login', function () { // TODO: Trello

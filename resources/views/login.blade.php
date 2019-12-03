@@ -58,20 +58,21 @@
                             </h3>
                             <p>Silahkan masuk sesuai username dan password yang terdaftar!</p><br>
                         </div>
-                        <form action="" method="">
+                        <form action="/anggota/login" method="POST"> <!--FORM LOGIN-->
+                            {{ csrf_field() }}
                             <div class="form-group row">
                                 <h4><label for="inputUsername" class="col-sm-5 col-form-label">Username</label></h4>
                                 <div class="col-sm-4">
-                                    <input type="text" class="form-control form-control-sm" id="username" placeholder="">
+                                    <input type="text" class="form-control form-control-sm" id="username" name="username" placeholder="">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <h4><label for="inputPassword" class="col-sm-5 col-form-label">Password</label></h4>
                                 <div class="col-sm-4">
-                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="">
+                                    <input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="">
                                 </div>
                             </div>
-                                <h2><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login</a></h2>
+                                <h2><button type="submit" href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login</button></h2>
                         </form>
                             <div class="social text-center">
                                 <a href="#"><i class="fa fa-facebook"></i></a>

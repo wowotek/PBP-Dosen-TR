@@ -58,32 +58,33 @@
                             </h3>
                             <p>Silahkan registrasi dan lengkapi data!</p><br>
                         </div>
-                        <form action="" method="">
+                        <form action="/anggota/ppbdb" method="POST"> <!--FORM PPDB-->
+                            {{ csrf_field() }}
                             <div class="form-group row">
                                 <h4><label for="inputUsername" class="col-sm-5 col-form-label">Username</label></h4>
                                 <div class="col-sm-4">
-                                    <input type="text" class="form-control form-control-sm" id="username" placeholder="">
+                                    <input type="text" class="form-control form-control-sm" id="username" name="username" placeholder="">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <h4><label for="inputUsername" class="col-sm-5 col-form-label">E-mail</label></h4>
                                 <div class="col-sm-4">
-                                    <input type="text" class="form-control form-control-sm" id="username" placeholder="">
+                                    <input type="text" class="form-control form-control-sm" id="username" name="email" placeholder="">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <h4><label for="inputPassword" class="col-sm-5 col-form-label">Password</label></h4>
                                 <div class="col-sm-4">
-                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="">
+                                    <input type="password" class="form-control form-control-sm" id="password" name="password" placeholder="">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <h4><label for="inputPassword" class="col-sm-5 col-form-label">Confirm Password</label></h4>
                                 <div class="col-sm-4">
-                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="">
+                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="" name="confirm_password">
                                 </div>
                             </div>
-                                <h2><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</a></h2>
+                                <h2><button type="submit" href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</button></h2>
                         </form>
                         </div>
                     </div>
