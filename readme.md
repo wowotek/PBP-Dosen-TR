@@ -53,7 +53,7 @@
 4. bangkitkan _app-key_ baru
 
     ```bash
-    composer key:generate
+    php artisan key:generate
     ```
 
 5. Nyalakan serve development [^1]
