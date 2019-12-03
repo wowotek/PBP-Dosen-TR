@@ -29,7 +29,7 @@
         .sidenav a, .dropdown-btn {
             padding: 8px 8px 6px 16px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 18px;
             color: #000000;
             display: block;
             border: none;
@@ -56,7 +56,7 @@
         /* Add an active class to the active dropdown button */
         .active {
             background-color: #fbb017;
-            color: white;
+            color: #16244b;
         }
 
         /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -85,6 +85,7 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" media="screen">
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/mine.css')}}">
     <link rel="script" href="{{asset('frontend/js/mine.js')}}">
     <link rel='stylesheet' id="camera-css"  href="{{asset('frontend/css/camera.css')}}" type="text/css" media="all">
@@ -97,29 +98,11 @@
 <body>
     <div class="sidenav">
         <div class="sidnav-logo">
-            <a class="navbar-brand" href="{{url('home')}}">
-                <img src="{{asset('frontend/image/logo-dash.png')}}" alt="Logo">
-            </a>
+        <a class="navbar-brand" href="{{url('home')}}">
+            <img src="{{asset('frontend/image/logo-dash.png')}}" alt="Logo">
+        </a>
         <a href="#">&nbsp;</a>
-        <a href="#">&nbsp;</a>
-        <button class="dropdown-btn">
-            Manajemen Penerimaan Siswa <i class="fa fa-caret-down"></i>
-        </button>
-            <div class="dropdown-container">
-                <a href="{{url('dashboard/tatausaha/calon-siswa')}}">• Calon Siswa</a>
-                <a href="{{url('dashboard/tatausaha/siswa-acc')}}">• Siswa Diterima</a>
-            </div>
-            <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
-        <button class="dropdown-btn">
-            Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
-        </button>
-            <div class="dropdown-container">
-                <a href="{{url('dashboard/tatausaha/guru/bahasa')}}">• Bahasa Indonesia</a>
-                <a href="{{url('dashboard/tatausaha/guru/agama')}}">• Pendidikan Agama</a>
-                <a href="{{url('dashboard/tatausaha/guru/pkn')}}">• Pendidikan Kewarganegaraan</a>
-                <a href="{{url('dashboard/tatausaha/guru/sejarah')}}">• Sejarah</a>
-                <a href="{{url('dashboard/tatausaha/guru/matematika')}}">• Matematika</a>
-            </div>
+        <a href="#">Kelas Saya</a>
         </div>
     </div>
 
@@ -127,10 +110,10 @@
         <nav class="navbar navbar-light bg-light">
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-left mainNav">
-                    <a class="navbar-brand" href="{{url('dashboard/tatausaha')}}">DASHBOARD TATA USAHA</a>
+                    <a class="navbar-brand" href="{{url('dashboard/tatausaha')}}">DASHBOARD GURU - WALI KELAS</a>
                 </ul>
                 <ul class="nav navbar-nav pull-right mainNav">
-                <i class="fa fa-user">&nbsp;Account</i>
+                <i class="fa fa-user">&nbsp;</i>Account
                 </ul>
             </div>
         </nav>
@@ -140,34 +123,70 @@
                 <div class="row">
                     <div class="col">
                         <div class="white-box-icon">
-                            <div class="align-self-center">
-                                <div class="text-center">
-                                    <h2>MANAJEMEN GURU - MATEMATIKA</h2>
-                                        <table class="table table-bordered">
-                                            <thead>
-                                            <tr>
-                                                <td>No</td>
-                                                <td>Nama Lengkap</td>
-                                                <td>No Induk Guru</td>
-                                                <td>Kelas</td>
-                                            </tr>
-                                        </thead>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>TBD</td>
-                                            <td>TBD</td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary bt-sm">A</button>
-                                                <button type="button" class="btn btn-info bt-sm">B</button>
-                                                <button type="button" class="btn btn-success bt-sm">C</button>
-                                                <button type="button" class="btn btn-danger bt-sm">D</button>
-                                                <button type="button" class="btn btn-warning bt-sm">E</button>
-                                            </td>
-                                        </tr>
-                                        </table>
-                                    </div>
-                                </div>
+                            <div class="text-center">
+                                <img src="{{asset('frontend/image/logo-dash.png')}}" class="rounded mx-auto d-block" alt="Logo BSN">
                             </div>
+                        <p class="text-left">Nama :</p>
+                        <p class="text-left">Kelas</p>
+                        <p class="text-left">Semester :</p>
+                        <p class="text-left">Tahun Ajaran :</p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="row">No.</th>
+                                    <th scope="row">Mata Pelajaran</th>
+                                    <th scope="row">Nilai Akhir</th>
+                                    <th scope="row">Catatan</th>
+                                </tr>
+                            </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                    <td>TBD</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td coolspan="2">Nilai Rata-rata</td>
+                                    <td>TBD</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="row">Keterangan Tidak Masuk</th>
+                                        <th scope="row">Jumlah</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>Sakit</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="sakit" placeholder="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Izin</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="izin" placeholder="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tanpa Keterangan</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="alfa" placeholder="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>TBD</td>
+                                </tr>
+                            </table>
+                            <div class="form-group">
+                                <label>Catatan Wali Kelas : </label>
+                                <textarea class="form-control" id="catatanwali" rows="3"></textarea>
+                            </div>
+                            <a class="btn btn-primary btn-lg" href="{{url('tbd')}}" role="button">Konfirmasi</a><br>
                         </div>
                     </div>
                 </div>

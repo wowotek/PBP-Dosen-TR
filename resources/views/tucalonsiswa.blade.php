@@ -107,7 +107,6 @@
         </button>
             <div class="dropdown-container">
                 <a href="#">• Calon Siswa</a>
-                <a href="{{url('dashboard/tatausaha/siswa-acc')}}">• Siswa Diterima</a>
             </div>
         <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
         <a href="{{url('dashboard/tatausaha/wali-kelas')}}">Manajemen Wali Kelas</a>
@@ -115,11 +114,11 @@
             Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
         </button>
             <div class="dropdown-container">
-                <a href="{{url('dashboard/tatausaha/guru/bahasa')}}">• Bahasa Indonesia</a>
-                <a href="{{url('dashboard/tatausaha/guru/agama')}}">• Pendidikan Agama</a>
-                <a href="{{url('dashboard/tatausaha/guru/pkn')}}">• Pendidikan Kewarganegaraan</a>
-                <a href="{{url('dashboard/tatausaha/guru/sejarah')}}">• Sejarah</a>
-                <a href="{{url('dashboard/tatausaha/guru/matematika')}}">• Matematika</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Bahasa Indonesia</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Pendidikan Agama</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Pendidikan Kewarganegaraan</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Sejarah</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Matematika</a>
             </div>
         </div>
     </div>

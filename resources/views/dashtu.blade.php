@@ -108,7 +108,6 @@
         </button>
             <div class="dropdown-container">
                 <a href="{{url('dashboard/tatausaha/calon-siswa')}}">• Calon Siswa</a>
-                <a href="{{url('dashboard/tatausaha/siswa-acc')}}">• Siswa Diterima</a>
             </div>
         <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
         <a href="{{url('dashboard/tatausaha/wali-kelas')}}">Manajemen Wali Kelas</a>
@@ -116,11 +115,11 @@
             Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
         </button>
             <div class="dropdown-container">
-                <a href="{{url('dashboard/tatausaha/guru/bahasa')}}">• Bahasa Indonesia</a>
-                <a href="{{url('dashboard/tatausaha/guru/agama')}}">• Pendidikan Agama</a>
-                <a href="{{url('dashboard/tatausaha/guru/pkn')}}">• Pendidikan Kewarganegaraan</a>
-                <a href="{{url('dashboard/tatausaha/guru/sejarah')}}">• Sejarah</a>
-                <a href="{{url('dashboard/tatausaha/guru/matematika')}}">• Matematika</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Bahasa Indonesia</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Pendidikan Agama</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Pendidikan Kewarganegaraan</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Sejarah</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Matematika</a>
             </div>
         </div>
     </div>
@@ -147,19 +146,18 @@
                                         <div class="col">
                                             <h2>PENERIMAAN PESERTA DIDIK BARU</h2>
                                             <a class="btn btn-primary" href="{{url('dashboard/tatausaha/calon-siswa')}}" role="button">Calon Siswa</a>
-                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/siswa-acc')}}" role="button">Siswa Diterima</a>
                                         </div>
                                         <div class="col">
                                             <h2>KELOLA PENEMPATAN KELAS SISWA</h2>
-                                            <a class="btn btn-primary" href="#" role="button">Manajemen Siswa Kelas</a>
+                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/kelas-siswa')}}" role="button">Manajemen Siswa Kelas</a>
                                         </div>
                                         <div class="col">
                                             <h2>GURU KELAS / GURU MATA PELAJARAN</h2>
-                                            <a class="btn btn-primary" href="#" role="button">Bahasa Indonesia</a>
-                                            <a class="btn btn-primary" href="#" role="button">Pendidikan Agama</a>
-                                            <a class="btn btn-primary" href="#" role="button">Pendidikan Kewarganegaraan</a>
-                                            <a class="btn btn-primary" href="#" role="button">Sejarah</a>
-                                            <a class="btn btn-primary" href="#" role="button">Matematika</a>
+                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/guru-mapel')}}" role="button">Bahasa Indonesia</a>
+                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/guru-mapel')}}" role="button">Pendidikan Agama</a>
+                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/guru-mapel')}}" role="button">Pendidikan Kewarganegaraan</a>
+                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/guru-mapel')}}" role="button">Sejarah</a>
+                                            <a class="btn btn-primary" href="{{url('dashboard/tatausaha/guru-mapel')}}" role="button">Matematika</a>
                                         </div>
                                     </div>
                                 </div>

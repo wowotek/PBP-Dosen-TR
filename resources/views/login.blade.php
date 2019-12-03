@@ -33,12 +33,11 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-left mainNav">
                 <li><a href="{{url('home')}}">Beranda</a></li>
-                <li><a href="{{url('#')}}">Tentang</a></li>
-                <li class="active"><a href="#">Daftar PPDB</a></li>
+                <li><a href="{{url('about')}}">Tentang</a></li>
+                <li class="active"><a href="ppdb">Daftar PPDB</a></li>
             </ul>
             <ul class="nav navbar-nav pull-right mainNav">
                 <li><a href="{{url('#')}}">Login</a></li>
-                <li><a href="{{url('register')}}">Register</a></li>
             </ul>
             </div>
             <!--/.nav-collapse -->
@@ -55,13 +54,13 @@
                         <div class="text-center">
                             <img width="50%" class="image-fluid" src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
                             <h3>
-                                Registrasi User
+                                Log in User
                             </h3>
-                            <p>Silahkan registrasi dan lengkapi data!</p><br>
+                            <p>Silahkan masuk sesuai username dan password yang terdaftar!</p><br>
                         </div>
                         <form action="" method="">
                             <div class="form-group row">
-                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">Username/E-mail</label></h4>
+                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">Username</label></h4>
                                 <div class="col-sm-4">
                                     <input type="text" class="form-control form-control-sm" id="username" placeholder="">
                                 </div>

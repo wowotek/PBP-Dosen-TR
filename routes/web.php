@@ -30,8 +30,13 @@ Route::get('/ppdb', function () { // TODO: Trello
     return view('form');
 });
 
+<<<<<<< HEAD
 Route::get('/register', function () { // TODO: Trello
     return view('register');
+=======
+Route::get('/ppdb/confirm', function () {
+    return view('biosiswa');
+>>>>>>> 267c3a0420e1f4c5bbf33f9ff3fe3e4d0a75b356
 });
 
 Route::get('/login', function () { // TODO: Trello
@@ -47,10 +52,6 @@ Route::get('/dashboard/tatausaha/calon-siswa', function () {
     return view('tucalonsiswa');
 });
 
-Route::get('/dashboard/tatausaha/siswa-acc', function () {
-    return view('tusiswaacc');
-});
-
 Route::get('/dashboard/tatausaha/wali-kelas', function () {
     return view('tuwalikelas');
 });
@@ -59,24 +60,8 @@ Route::get('/dashboard/tatausaha/kelas-siswa', function () {
     return view('tusiswakelas');
 });
 
-Route::get('/dashboard/tatausaha/guru/bahasa', function () {
-    return view('mapelindo');
-});
-
-Route::get('/dashboard/tatausaha/guru/agama', function () {
-    return view('mapelagama');
-});
-
-Route::get('/dashboard/tatausaha/guru/pkn', function () {
-    return view('mapelpkn');
-});
-
-Route::get('/dashboard/tatausaha/guru/sejarah', function () {
-    return view('mapelsjr');
-});
-
-Route::get('/dashboard/tatausaha/guru/matematika', function () {
-    return view('mapelmtk');
+Route::get('/dashboard/tatausaha/guru-mapel', function () {
+    return view('tumapel');
 });
 
 // Dashboard Guru
@@ -90,6 +75,10 @@ Route::get('/dashboard/guru/kelas', function () {
 
 Route::get('/dashboard/guru/wali', function () {
     return view('dashguruwali');
+});
+
+Route::get('/dashboard/guru/wali/confirm', function () {
+    return view('dashwaliadv');
 });
 
 // Dashboard Siswa

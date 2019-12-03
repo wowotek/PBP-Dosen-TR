@@ -38,7 +38,6 @@
         </ul>
         <ul class="nav navbar-nav pull-right mainNav">
           <li><a href="{{url('login')}}">Login</a></li>
-          <li><a href="{{url('register')}}">Register</a></li>
         </ul>
 			</div>
 			<!--/.nav-collapse -->

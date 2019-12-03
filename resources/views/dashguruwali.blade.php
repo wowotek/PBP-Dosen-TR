@@ -134,9 +134,6 @@
                                             <td>No.</td>
                                             <td>Nama</td>
                                             <td>No. Induk Siswa</td>
-                                            <td>Izin</td>
-                                            <td>Sakit</td>
-                                            <td>Alfa</td>
                                             <td>NILAI AKHIR</td>
                                             <td>Catatan</td>
                                             <td>Action</td>
@@ -148,10 +145,7 @@
                                         <td>TBD</td>
                                         <td>TBD</td>
                                         <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td><a href="{{url('dashboard/guru/kelas')}}" class="btn btn-warning">Input</a></td>
+                                        <td><a href="{{url('dashboard/guru/wali/confirm')}}" class="btn btn-warning">Input</a></td>
                                     </tr>
                                     </table>
                                     </div>

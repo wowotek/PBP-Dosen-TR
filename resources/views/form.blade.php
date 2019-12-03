@@ -34,11 +34,10 @@
             <ul class="nav navbar-nav pull-left mainNav">
                 <li><a href="{{url('home')}}">Beranda</a></li>
                 <li><a href="{{url('about')}}">Tentang</a></li>
-                <li class="active"><a href="#">Daftar PPDB</a></li>
+                <li class="active"><a href="{{url('ppdb')}}">Daftar PPDB</a></li>
             </ul>
             <ul class="nav navbar-nav pull-right mainNav">
                 <li><a href="{{url('login')}}">Login</a></li>
-                <li><a href="{{url('register')}}">Register</a></li>
             </ul>
             </div>
             <!--/.nav-collapse -->
@@ -48,65 +47,48 @@
 
     <div class="container">
         <div class="row">
-            <div class="col">
-                <div class="grey-box-icon">
-                <div class="text-center">
-                    <img width="50%" class="image-fluid" src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
-                    <h2>
-                        Form Pendaftaran PPDB
-                    </h2>
-                    <p>Silahkan isi data diri anda untuk masuk ke data peserta PPDB</p><br>
-                </div>
-                <form action="" method="">
-                    <div class="form-group row">
-                        <h4><label for="inputName" class="col-sm-3 col-form-label">Nama Lengkap</label></h4>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control form-control-sm" id="nama" placeholder="">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="grey-box-icon">
+                        <div class="text-center">
+                            <img width="50%" class="image-fluid" src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
+                            <h3>
+                                Registrasi User
+                            </h3>
+                            <p>Silahkan registrasi dan lengkapi data!</p><br>
+                        </div>
+                        <form action="" method="">
+                            <div class="form-group row">
+                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">Username</label></h4>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control form-control-sm" id="username" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">E-mail</label></h4>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control form-control-sm" id="username" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <h4><label for="inputPassword" class="col-sm-5 col-form-label">Password</label></h4>
+                                <div class="col-sm-4">
+                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <h4><label for="inputPassword" class="col-sm-5 col-form-label">Confirm Password</label></h4>
+                                <div class="col-sm-4">
+                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="">
+                                </div>
+                            </div>
+                                <h2><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</a></h2>
+                        </form>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <h4><label for="inputTK" class="col-sm-3 col-form-label">TK Asal</label></h4>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control form-control-sm" id="tk" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <h4><label for="inputSD" class="col-sm-3 col-form-label">SD Asal</label></h4>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control form-control-sm" id="sd" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <h4><label for="inputSMP" class="col-sm-3 col-form-label">SMP Asal</label></h4>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control form-control-sm" id="smp" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <h4><label for="inputNEM" class="col-sm-3 col-form-label">Nilai Akhir TK</label></h4>
-                        <div class="col-sm-2">
-                            <input type="number" class="form-control form-control-sm" min="0" data-bind="value:replyNumber" id="nemtk" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <h4><label for="inputNEM" class="col-sm-3 col-form-label">Nilai Akhir SD</label></h4>
-                        <div class="col-sm-2">
-                            <input type="number" class="form-control form-control-sm" min="0" data-bind="value:replyNumber" id="nemsd" placeholder="">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <h4><label for="inputNEM" class="col-sm-3 col-form-label">Nilai Akhir SMP</label></h4>
-                        <div class="col-sm-2">
-                            <input type="number" class="form-control form-control-sm" min="0" data-bind="value:replyNumber" id="nemsmp" placeholder="">
-                        </div>
-                    </div>
-                    <div class="">
-                        &nbsp;
-                    </div>
-                        <h2><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</a></h2>
-                </form>
-                </div>
-            </div><!--/span3-->
+                </div><!--/span3-->
+            </div>
         </div>
     </div>
     
@@ -169,6 +151,6 @@
             <!-- /row of panels -->
             </div>
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>
