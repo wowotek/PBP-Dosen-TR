@@ -65,8 +65,5 @@
         </style>
     </head>
     <body>
-        @foreach($jg as $i)
-            <h1 style="color: black">{{ $i->id }} | {{ $i->nama }}</h1><br>
-        @endforeach
     </body>
 </html>

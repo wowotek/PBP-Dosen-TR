@@ -18,23 +18,23 @@
 
 Route::get('/', 'Controller@show');
 
-Route::get('/home', function () {
+Route::get('/home', function () { // STATIS
     return view('home');
 });
 
-Route::get('/about', function () {
+Route::get('/about', function () { // STATIS
     return view('about');
 });
 
-Route::get('/ppdb', function () {
+Route::get('/ppdb', function () { // TODO: Trello
     return view('form');
 });
 
-Route::get('/register', function () {
+Route::get('/register', function () { // TODO: Trello
     return view('register');
 });
 
-Route::get('/login', function () {
+Route::get('/login', function () { // TODO: Trello
     return view('login');
 });
 
