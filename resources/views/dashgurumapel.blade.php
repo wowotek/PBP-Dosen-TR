@@ -168,9 +168,6 @@
                                             <td>No.</td>
                                             <td>Nama</td>
                                             <td>No. Induk Siswa</td>
-                                            <td>Tugas</td>
-                                            <td>UTS</td>
-                                            <td>UAS</td>
                                             <td>Nilai Akhir</td>
                                             <td>Catatan</td>
                                             <td>Action</td>
@@ -178,9 +175,6 @@
                                     </thead>
                                     <tr>
                                         <td>1</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
                                         <td>TBD</td>
                                         <td>TBD</td>
                                         <td>TBD</td>

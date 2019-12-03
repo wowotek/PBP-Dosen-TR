@@ -84,7 +84,8 @@
 	<link rel="favicon" href="{{asset('frontend/image/favicon.png')}}">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" media="screen">
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/mine.css')}}">
     <link rel="script" href="{{asset('frontend/js/mine.js')}}">
     <link rel='stylesheet' id="camera-css"  href="{{asset('frontend/css/camera.css')}}" type="text/css" media="all">
@@ -107,18 +108,18 @@
         </button>
             <div class="dropdown-container">
                 <a href="{{url('dashboard/tatausaha/calon-siswa')}}">• Calon Siswa</a>
-                <a href="{{url('dashboard/tatausaha/siswa-acc')}}">• Siswa Diterima</a>
             </div>
-            <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
+        <a href="{{url('dashboard/tatausaha/kelas-siswa')}}">Manajemen Siswa Kelas</a>
+        <a href="{{url('dashboard/tatausaha/wali-kelas')}}">Manajemen Wali Kelas</a>
         <button class="dropdown-btn">
             Manajemen Guru Kelas<i class="fa fa-caret-down"></i>
         </button>
             <div class="dropdown-container">
-                <a href="{{url('dashboard/tatausaha/guru/bahasa')}}">• Bahasa Indonesia</a>
-                <a href="{{url('dashboard/tatausaha/guru/agama')}}">• Pendidikan Agama</a>
-                <a href="{{url('dashboard/tatausaha/guru/pkn')}}">• Pendidikan Kewarganegaraan</a>
-                <a href="{{url('dashboard/tatausaha/guru/sejarah')}}">• Sejarah</a>
-                <a href="{{url('dashboard/tatausaha/guru/matematika')}}">• Matematika</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Bahasa Indonesia</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Pendidikan Agama</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Pendidikan Kewarganegaraan</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Sejarah</a>
+                <a href="{{url('dashboard/tatausaha/guru-mapel')}}">• Matematika</a>
             </div>
         </div>
     </div>
@@ -142,7 +143,7 @@
                         <div class="white-box-icon">
                             <div class="align-self-center">
                                 <div class="text-center">
-                                    <h2>MANAJEMEN GURU - PENDIDIKAN KEWARGANEGARAAN</h2>
+                                    <h2>MANAJEMEN GURU - PENDIDIKAN AGAMA</h2>
                                         <table class="table table-bordered">
                                             <thead>
                                             <tr>

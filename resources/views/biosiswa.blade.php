@@ -38,7 +38,6 @@
             </ul>
             <ul class="nav navbar-nav pull-right mainNav">
                 <li><a href="{{url('login')}}">Login</a></li>
-                <li><a href="{{url('#')}}">Register</a></li>
             </ul>
             </div>
             <!--/.nav-collapse -->
@@ -55,37 +54,19 @@
                         <div class="text-center">
                             <img width="50%" class="image-fluid" src="{{asset('frontend/image/logo-hor.png')}}" alt="Logo">
                             <h3>
-                                Registrasi User
+                                Lengkapi Data Diri
                             </h3>
-                            <p>Silahkan registrasi dan lengkapi data!</p><br>
+                            <p>Masukkan lengkap anda!</p><br>
                         </div>
                         <form action="" method="">
                             <div class="form-group row">
-                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">Username</label></h4>
-                                <div class="col-sm-4">
+                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">Nama Lengkap</label></h4>
+                                <div class="col-sm-5">
                                     <input type="text" class="form-control form-control-sm" id="username" placeholder="">
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <h4><label for="inputUsername" class="col-sm-5 col-form-label">E-mail</label></h4>
-                                <div class="col-sm-4">
-                                    <input type="text" class="form-control form-control-sm" id="username" placeholder="">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <h4><label for="inputPassword" class="col-sm-5 col-form-label">Password</label></h4>
-                                <div class="col-sm-4">
-                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <h4><label for="inputPassword" class="col-sm-5 col-form-label">Confirm Password</label></h4>
-                                <div class="col-sm-4">
-                                    <input type="password" class="form-control form-control-sm" id="password" placeholder="">
-                                </div>
-                            </div>
-                                <h2><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</a></h2>
-                        </form>
+                                <h2><a href="{{url('home')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Daftar</a></h2>
+                            </form>
                         </div>
                     </div>
                 </div><!--/span3-->

@@ -135,48 +135,12 @@
                                     <tr>
                                         <th scope="row">No.</th>
                                         <th scope="row">Mata Pelajaran</th>
-                                        <th scope="row">KKM</th>
                                         <th scope="row">Nilai Akhir</th>
-                                        <th scope="row">Indeks</th>
                                         <th scope="row">Catatan</th>
                                     </tr>
                                 </thead>
                                     <tr>
                                         <td>1</td>
-                                        <td>Bahasa Indonesia</td>
-                                        <td>80</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Pendidikan Agama</td>
-                                        <td>80</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Pendidikan Kewarganegaraan</td>
-                                        <td>76</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Sejarah</td>
-                                        <td>76</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                        <td>TBD</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Matematika</td>
-                                        <td>76</td>
                                         <td>TBD</td>
                                         <td>TBD</td>
                                         <td>TBD</td>
@@ -185,8 +149,6 @@
                                         <td></td>
                                         <td coolspan="2">Nilai Rata-rata</td>
                                         <td>TBD</td>
-                                        <td></td>
-                                        <td></td>
                                         <td></td>
                                     </tr>
                                 </table>
@@ -225,7 +187,6 @@
             </div>
         </div>
     </div>
-
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
